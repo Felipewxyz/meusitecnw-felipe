@@ -3,107 +3,172 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Segurança Digital: Proteja Seus Dados</title>
+  <title>Segurança Digital</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      background-color: #f2f2f2;
+      background-color: #f5f7fa;
       color: #333;
     }
+
     header {
-      background-color: #004080;
+      background-color: #003366;
       color: white;
-      padding: 20px;
       text-align: center;
+      padding: 40px 20px;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+
     nav {
-      background-color: #cce0ff;
+      background-color: #e6f0ff;
       padding: 10px;
       text-align: center;
     }
+
     nav a {
       margin: 0 15px;
-      color: #004080;
       text-decoration: none;
+      color: #003366;
       font-weight: bold;
+      transition: color 0.3s;
     }
+
+    nav a:hover {
+      color: #0059b3;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
     section {
-      padding: 20px;
       background-color: white;
-      margin: 10px;
-      border-radius: 8px;
+      padding: 25px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     }
-    img {
-      max-width: 100%;
-      height: auto;
-      margin: 10px 0;
+
+    section h2 {
+      color: #003366;
     }
+
+    section ul {
+      padding-left: 20px;
+    }
+
+    section img {
+      max-width: 80px;
+      display: block;
+      margin: 15px auto;
+    }
+
     footer {
-      background-color: #004080;
+      background-color: #003366;
       color: white;
       text-align: center;
-      padding: 15px;
-      margin-top: 20px;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    a {
+      color: #003366;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      section img {
+        max-width: 60px;
+      }
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Segurança Digital: Proteja Seus Dados</h1>
-  <p>Um guia educativo sobre antivírus, firewall e atualizações</p>
+  <h1>Segurança Digital</h1>
+  <p>Aprenda a se proteger com antivírus, firewall e atualizações</p>
 </header>
 
 <nav>
-  <a href="#seguranca">O que é segurança de dados</a>
-  <a href="#boaspraticas">Boas práticas</a>
-  <a href="#ameacas">Identificando ameaças</a>
-  <a href="#links">Links úteis</a>
+  <a href="#seguranca">Segurança de Dados</a>
+  <a href="#boaspraticas">Boas Práticas</a>
+  <a href="#ameacas">Ameaças Digitais</a>
+  <a href="#links">Links Úteis</a>
 </nav>
 
-<section id="seguranca">
-  <h2>O que é segurança de dados?</h2>
-  <p>Segurança de dados é um conjunto de práticas e ferramentas que protegem suas informações pessoais e profissionais contra acessos não autorizados.</p>
-  <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="Cadeado de segurança">
-</section>
+<main>
+  <section id="seguranca">
+    <h2>O que é segurança de dados?</h2>
+    <p>Segurança de dados é o conjunto de práticas que protege suas informações contra roubo, vazamentos ou danos. Isso inclui o uso de antivírus, firewalls, senhas fortes e atualizações frequentes.</p>
+    <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="Cadeado de segurança">
+  </section>
 
-<section id="boaspraticas">
-  <h2>Exemplos de boas práticas</h2>
-  <ul>
-    <li><strong>Use senhas fortes:</strong> Combine letras, números e símbolos. Evite datas ou nomes comuns.</li>
-    <li><strong>Antivírus atualizado:</strong> Instale um bom antivírus e mantenha-o sempre atualizado.</li>
-    <li><strong>Firewall ativo:</strong> O firewall protege seu computador de acessos não autorizados.</li>
-    <li><strong>Faça backups:</strong> Salve seus arquivos em locais seguros (nuvem ou HD externo).</li>
-    <li><strong>Navegação segura:</strong> Evite sites desconhecidos e não clique em links suspeitos.</li>
-  </ul>
-  <img src="https://cdn-icons-png.flaticon.com/512/709/709579.png" alt="Escudo representando segurança">
-</section>
+  <section id="boaspraticas">
+    <h2>Exemplos de boas práticas</h2>
+    <ul>
+      <li><strong>Senhas fortes:</strong> Use letras, números e símbolos. Evite datas ou nomes comuns.</li>
+      <li><strong>Antivírus confiável:</strong> Instale e mantenha sempre atualizado.</li>
+      <li><strong>Firewall:</strong> Ele bloqueia acessos perigosos ao seu computador.</li>
+      <li><strong>Backups regulares:</strong> Salve arquivos importantes na nuvem ou HD externo.</li>
+      <li><strong>Navegação segura:</strong> Evite clicar em links suspeitos ou baixar de fontes duvidosas.</li>
+    </ul>
+    <img src="https://cdn-icons-png.flaticon.com/512/709/709579.png" alt="Ícone de proteção">
+  </section>
 
-<section id="ameacas">
-  <h2>Como identificar golpes e ameaças digitais</h2>
-  <p>Golpes digitais são cada vez mais comuns. Fique atento aos sinais:</p>
-  <ul>
-    <li>Mensagens com promoções "boas demais para ser verdade"</li>
-    <li>Emails pedindo para clicar em links ou baixar anexos</li>
-    <li>Sites falsos que imitam páginas reais</li>
-    <li>Solicitações de dados pessoais sem motivo claro</li>
-  </ul>
-  <img src="https://cdn-icons-png.flaticon.com/512/483/483361.png" alt="Imagem de alerta">
-</section>
+  <section id="ameacas">
+    <h2>Como identificar golpes e ameaças digitais</h2>
+    <p>Os ataques digitais usam armadilhas para enganar usuários. Veja como se proteger:</p>
+    <ul>
+      <li>Desconfie de promoções muito vantajosas.</li>
+      <li>Emails e mensagens com erros de português ou pedidos de dados.</li>
+      <li>Sites falsos parecidos com bancos ou lojas reais.</li>
+      <li>Solicitações urgentes que pressionam você a agir rápido.</li>
+    </ul>
+    <img src="https://cdn-icons-png.flaticon.com/512/483/483361.png" alt="Ícone de alerta">
+  </section>
 
-<section id="links">
-  <h2>Links úteis</h2>
-  <p>Saiba mais sobre segurança digital:</p>
-  <ul>
-    <li><a href="https://www.safernet.org.br" target="_blank">SaferNet Brasil</a></li>
-    <li><a href="https://www.kaspersky.com.br" target="_blank">Kaspersky Brasil</a></li>
-    <li><a href="https://www.gov.br/pt-br/temas/seguranca-na-internet" target="_blank">Governo Federal - Segurança na Internet</a></li>
-  </ul>
-</section>
+  <section id="links">
+    <h2>Links úteis</h2>
+    <p>Saiba mais sobre segurança digital em sites confiáveis:</p>
+    <ul>
+      <li><a href="https://www.safernet.org.br" target="_blank">SaferNet Brasil</a></li>
+      <li><a href="https://www.kaspersky.com.br" target="_blank">Kaspersky Brasil</a></li>
+      <li><a href="https://www.gov.br/pt-br/temas/seguranca-na-internet" target="_blank">Gov.br - Segurança na Internet</a></li>
+    </ul>
+  </section>
+</main>
 
 <footer>
-  <p>Site criado pelo Grupo 2 - Turma de Informática<br>2025 ©</p>
+  <p>Site criado pelo Grupo 2 - Projeto Educativo de Segurança Digital | 2025 ©</p>
 </footer>
 
 </body>
